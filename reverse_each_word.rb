@@ -12,8 +12,5 @@ end
 
 def reverse_each_word(x)
   y = x.split(" ")
-  y.collect do |z|
-    z.reverse
-    z.join(" ")
-  end
+  y.collect.reverse.join(" ")
 end
