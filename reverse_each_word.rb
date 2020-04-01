@@ -1,16 +1,16 @@
 
 def reverse_each_word(x)
-  y = x.split(" ")
-  z = ""
-  y.each do |i|
-    z << "#{i.reverse} "
+y = x.split()         # .split doesn't need to specify space as an argument
+i = ""
+y.each do |z|
+  i << "#{z.reverse} "
 end
-z.strip
+i.strip
 end
 
 
 
 def reverse_each_word(x)
-  y = x.split(" ")
-  y.collect { |x| x.reverse }.join(" ")
+  y = x.split()
+  y.collect {|z| z.reverse}.join(" ")       # .join needs to specify space as an argument
 end
