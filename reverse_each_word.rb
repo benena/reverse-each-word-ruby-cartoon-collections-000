@@ -5,7 +5,7 @@ i = ""
 y.each do |z|
   i << "#{z.reverse} "
 end
-i
+i.strip
 end
 
 
